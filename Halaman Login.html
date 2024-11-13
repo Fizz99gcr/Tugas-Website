@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: auto;
+            background: url('Toko.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            width: 300px;
+            margin: 100px auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        button {
+            padding: 10px;
+            width: 100%;
+        }
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            color: white;
+            font-size: 1em;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<h3> Selamat Datang Di Halaman Website! </h3>
+<h3> Ini adalah Halaman Login Website untuk memasuki Halaman Utama Website </h3>
+<h3> yang menyediakan barang-barang seperti Laptop,HP</h3>
+<h3> Tugas MPP Yang Dibuat Oleh: </h3>
+<h3> Nama : Rafiz Ananda Putra </h3>
+<h3> Kelas: XI Elektronika Industri 2 </h3>
+<h3> Mapel: MPP </h3>
+<h3> Silahkan Login! </h3>
+</div>
+    <div class="container">
+        <h2>Login untuk memasuki Halaman Website ☻</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="error" style="color:red;"></p>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').onsubmit = function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === 'user' && password === 'pass') {
+                window.location.href = 'html rafiz.html';
+            } else {
+                document.getElementById('error').innerText = 'username & password salah, yang benar username=user dan password=pass ';
+            }
+        };
+
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.className = 'snowflake';
+            snowflake.textContent = '⚡';
+            snowflake.style.left = Math.random() * 100 + 'vw';
+            snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+            snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+            document.body.appendChild(snowflake);
+            setTimeout(() => {
+                snowflake.remove();
+            }, 5000);
+        }
+
+        setInterval(createSnowflake, 200);
+    </script>
+</body>
+</html>

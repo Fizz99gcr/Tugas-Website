@@ -1,0 +1,287 @@
+	<!DOCTYPE html>
+	<html lang="id">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Toko Online</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header>
+			<h1>Selamat Datang di Toko Online Kami 😃</h1>
+			<h1>Menyediakan Barang Laptop Dan HP! </h1>
+		</header>
+
+		<div class="product-container">
+			<div class="product-item">
+				<img src="Laptop.jpg" alt="Gambar Produk 1" class="product-img">
+				<h2 class="product-name">Laptop Lenovo IdeaPad Slim D330 Flex</h2>
+				<p class="product-specs">
+					<strong>Spesifikasi:</strong>
+					<ul>
+						<li><strong>Sistem Operasi:</strong> Windows 11 Home</li>
+						<li><strong>Prosesor:</strong> Intel Celeron N4020 Dual Core up to 2.8 GHz (Cache 4MB)</li>
+						<li><strong>Grafis:</strong> Intel UHD Graphics 600</li>
+						<li><strong>RAM:</strong> 4GB DDR4 SO-DIMM</li>
+						<li><strong>Storage:</strong> 256 GB M.2 NVMe PCIe SSD</li>
+						<li><strong>Layar:</strong> IPS LED 15.6 Inci, Full HD 1920 x 1080 piksel</li>
+						<li><strong>Webcam:</strong> VGA Camera</li>
+						<li><strong>Baterai:</strong> 37Wh</li>
+						<li><strong>Konektivitas:</strong> WiFi 802.11ac, Bluetooth 4.1</li>
+						<li><strong>Port:</strong> USB Type C, USB Type A 2.0, HDMI, Headphone Jack</li>
+						<li><strong>Dimensi:</strong> 360.2 x 234.9 x 19.9 mm, berat: 1.8 kg</li>
+					</ul>
+					<strong>Stok:</strong> 10 unit
+				</p>
+				<p class="product-price">Harga: Rp 3.699.000 IDR</p>
+				<input type="number" class="product-quantity" value="1" min="1" max="10">
+				<button class="add-to-cart" onclick="addToCart('Laptop Lenovo IdeaPad Slim D330 Flex', 3699000, document.querySelector('.product-quantity').value)">Tambah ke Keranjang</button>
+				
+				
+			</div>
+
+			<div class="product-item">
+				<img src="Laptop2.jpg" alt="Gambar Produk 2" class="product-img">
+				<h2 class="product-name">Laptop ASUS VivoBook 15 A516MAO N4020</h2>
+				<p class="product-specs">
+					<strong>Spesifikasi:</strong>
+					<ul>
+						<li><strong>Sistem Operasi:</strong> Windows 11 Home</li>
+						<li><strong>Prosesor:</strong> Intel Celeron N4020 Dual Core up to 2.8 GHz (Cache 4MB)</li>
+						<li><strong>Grafis:</strong> Intel UHD Graphics 600</li>
+						<li><strong>RAM:</strong> 4GB DDR4 SO-DIMM</li>
+						<li><strong>Storage:</strong> 256 GB M.2 NVMe PCIe SSD</li>
+						<li><strong>Layar:</strong> IPS LED 15.6 Inci, Full HD 1920 x 1080 piksel</li>
+						<li><strong>Webcam:</strong> VGA Camera</li>
+						<li><strong>Baterai:</strong> 37Wh</li>
+						<li><strong>Konektivitas:</strong> WiFi 802.11ac, Bluetooth 4.1</li>
+						<li><strong>Port:</strong> USB Type C, USB Type A 2.0, HDMI, Headphone Jack</li>
+						<li><strong>Dimensi:</strong> 360.2 x 234.9 x 19.9 mm, berat: 1.8 kg</li>
+					</ul>
+					<strong>Stok:</strong> 20 unit
+				</p>
+				<p class="product-price">Harga: Rp 3.999.000 IDR</p>
+				<input type="number" class="product-quantity" value="1" min="1" max="20">
+				<button class="add-to-cart" onclick="addToCart('Laptop ASUS VivoBook 15 A516MAO N4020', 3999000, document.querySelector('.product-quantity').value)">Tambah ke Keranjang</button>
+			</div>
+			
+			<div class="product-item">
+				<img src="Laptop3.jpg" alt="Gambar Produk 3" class="product-img">
+				<h2 class="product-name">Laptop Lenovo IdeaPad Slim 3i 14IGL05</h2>
+				<p class="product-specs">
+					<strong>Spesifikasi:</strong>
+					<ul>
+						<li><strong>Sistem Operasi:</strong> Windows 11 Home</li>
+						<li><strong>Prosesor:</strong> Intel Pentium Silver N5030 Quad Core up to 3.1 GHz (Cache 4MB)</li>
+						<li><strong>Grafis:</strong> Intel UHD Graphics 605</li>
+						<li><strong>RAM:</strong> 8GB DDR4-2400</li>
+						<li><strong>Storage:</strong> 256 GB M.2 PCIe SSD</li>
+						<li><strong>Layar:</strong> TN 14 Inci, Full HD 1920 x 1080 piksel</li>
+						<li><strong>Webcam:</strong> HD 720p with Privacy Shutter</li>
+						<li><strong>Baterai:</strong> 35Wh</li>
+						<li><strong>Konektivitas:</strong> WiFi 802.11ac, Bluetooth 5.0</li>
+						<li><strong>Port:</strong> USB Type C, USB Type A 2.0, HDMI, Headphone Jack</li>
+						<li><strong>Dimensi:</strong> 327.1 x 241 x 19.9 mm, berat: 1.6 kg</li>
+					</ul>
+					<strong>Stok:</strong> 35 unit
+				</p>
+				<p class="product-price">Harga: Rp 4.999.000 IDR</p>
+				<input type="number" class="product-quantity" value="1" min="1" max="20">
+				<button class="add-to-cart" onclick="addToCart('Laptop Lenovo IdeaPad Slim 3i 14IGL05', 4999000, document.querySelector('.product-quantity').value)">Tambah ke Keranjang</button>
+			</div>
+			
+			<div class="product-item">
+				<img src="Laptop4.jpg" alt="Gambar Produk 4" class="product-img">
+				<h2 class="product-name">HP Laptop 14s dq0508TU</h2>
+				<p class="product-specs">
+					<strong>Spesifikasi:</strong>
+					<ul>
+						<li><strong>Sistem Operasi:</strong> Windows 11 Home</li>
+						<li><strong>Prosesor:</strong> Intel Celeron N4120 Quad Core up to 2.6 GHz (Cache 4MB)</li>
+						<li><strong>Grafis:</strong> Intel UHD Graphics 600</li>
+						<li><strong>RAM:</strong> 4GB DDR4-2400</li>
+						<li><strong>Storage:</strong> 256 GB M.2 PCIe NVMe SSD</li>
+						<li><strong>Layar:</strong> IPS 14 Inci, HD 1366 x 768 piksel</li>
+						<li><strong>Webcam:</strong> HP TrueVision HD Camera</li>
+						<li><strong>Baterai:</strong> 45Wh</li>
+						<li><strong>Konektivitas:</strong> WiFi 802.11ac, Bluetooth 4.2</li>
+						<li><strong>Port:</strong> USB Type C, USB Type A 2.0, HDMI, Headphone Jack</li>
+						<li><strong>Dimensi:</strong> 324 x 225.9 x 19.9 mm, berat: 1.46 kg</li>
+					</ul>
+					<strong>Stok:</strong> 27 unit
+				</p>
+				<p class="product-price">Harga: Rp 4.799.000 IDR</p>
+				<input type="number" class="product-quantity" value="1" min="1" max="20">
+				<button class="add-to-cart" onclick="addToCart('HP Laptop 14s dq0508TU', 4799000, document.querySelector('.product-quantity').value)">Tambah ke Keranjang</button>
+			</div>
+			
+			<div class="product-item">
+				<img src="Laptop5.jpg" alt="Gambar Produk 5" class="product-img">
+				<h2 class="product-name">Laptop Acer Aspire 3 Slim A315</h2>
+				<p class="product-specs">
+					<strong>Spesifikasi:</strong>
+					<ul>
+					   <li><strong>Sistem Operasi:</strong> Windows 11 Home</li>
+						<li><strong>Prosesor:</strong> Intel Celeron N4120 Quad Core up to 2.6 GHz (Cache 4MB)</li>
+						<li><strong>Grafis:</strong> Intel UHD Graphics 600</li>
+						<li><strong>RAM:</strong> 4GB DDR4-2400</li>
+						<li><strong>Storage:</strong> 256 GB M.2 PCIe NVMe SSD</li>
+						<li><strong>Layar:</strong> IPS 14 Inci, HD 1366 x 768 piksel</li>
+						<li><strong>Webcam:</strong> HP TrueVision HD Camera</li>
+						<li><strong>Baterai:</strong> 45Wh</li>
+						<li><strong>Konektivitas:</strong> WiFi 802.11ac, Bluetooth 4.2</li>
+						<li><strong>Port:</strong> USB Type C, USB Type A 2.0, HDMI, Headphone Jack</li>
+						<li><strong>Dimensi:</strong> 324 x 225.9 x 19.9 mm, berat: 1.46 kg</li>
+					</ul>
+					<strong>Stok:</strong> 29 unit
+				</p>
+				<p class="product-price">Harga: Rp 4.799.000 IDR</p>
+				<input type="number" class="product-quantity" value="1" min="1" max="20">
+				<button class="add-to-cart" onclick="addToCart('Laptop Acer Aspire 3 Slim A315', 4799000, document.querySelector('.product-quantity').value)">Tambah ke Keranjang</button>
+			</div>
+			
+			<div class="product-item">
+				<img src="Laptop6.jpg" alt="Gambar Produk 6" class="product-img">
+				<h2 class="product-name">Laptop Xiaomi RedmiBook 15</h2>
+				<p class="product-specs">
+					<strong>Spesifikasi:</strong>
+					<ul>
+					   <li><strong>Sistem Operasi:</strong> Windows 10 Home</li>
+						<li><strong>Prosesor:</strong> Intel Core i3-1115G4 Dual Core up to 4.1 GHz (Cache 6MB)</li>
+						<li><strong>Grafis:</strong> Intel UHD Graphics Gen-11</li>
+						<li><strong>RAM:</strong> 8GB DDR4 3200 MHz</li>
+						<li><strong>Storage:</strong> 256 GB SSD</li>
+						<li><strong>Layar:</strong> IPS 15.6 Inci, Full HD 1920 x 1080 piksel</li>
+						<li><strong>Webcam:</strong> HD 720p</li>
+						<li><strong>Baterai:</strong> 46Wh</li>
+						<li><strong>Konektivitas:</strong> WiFi 802.11ac, Bluetooth 5.0</li>
+						<li><strong>Port:</strong> USB Type C, USB Type A 2.0, HDMI, Headphone Jack</li>
+						<li><strong>Dimensi:</strong> 363.8 x 243.5 x 19.9 mm, berat: 1.8 kg</li>
+					</ul>
+					<strong>Stok:</strong> 31 unit
+				</p>
+				<p class="product-price">Harga: Rp 4.899.000 IDR</p>
+				<input type="number" class="product-quantity" value="1" min="1" max="20">
+				<button class="add-to-cart" onclick="addToCart('Laptop Xiaomi RedmiBook 15', 4899000, document.querySelector('.product-quantity').value)">Tambah ke Keranjang</button>
+			</div>
+			
+			<div class="product-item">
+				<img src="Laptop7.jpg" alt="Gambar Produk 7" class="product-img">
+				<h2 class="product-name">Laptop Lenovo V14 G2 ITL</h2>
+				<p class="product-specs">
+					<strong>Spesifikasi:</strong>
+					<ul>
+					   <li><strong>Sistem Operasi:</strong> Windows 10 Home</li>
+						<li><strong>Prosesor:</strong> Intel Core i3-1115G4 Dual Core up to 4.1 GHz (Cache 6MB)</li>
+						<li><strong>Grafis:</strong> Intel UHD Graphics Gen-11</li>
+						<li><strong>RAM:</strong> 8GB DDR4 3200 MHz</li>
+						<li><strong>Storage:</strong> 256 GB SSD</li>
+						<li><strong>Layar:</strong> IPS 15.6 Inci, Full HD 1920 x 1080 piksel</li>
+						<li><strong>Webcam:</strong> HD 720p</li>
+						<li><strong>Baterai:</strong> 46Wh</li>
+						<li><strong>Konektivitas:</strong> WiFi 802.11ac, Bluetooth 5.0</li>
+						<li><strong>Port:</strong> USB Type C, USB Type A 2.0, HDMI, Headphone Jack</li>
+						<li><strong>Dimensi:</strong> 363.8 x 243.5 x 19.9 mm, berat: 1.8 kg</li>
+					</ul>
+					<strong>Stok:</strong> 13 unit
+				</p>
+				<p class="product-price">Harga: Rp 5.899.000 IDR</p>
+				<input type="number" class="product-quantity" value="1" min="1" max="20">
+				<button class="add-to-cart" onclick="addToCart('Laptop Lenovo V14 G2 ITL', 5899000, document.querySelector('.product-quantity').value)">Tambah ke Keranjang</button>
+			</div>
+			
+			<div class="product-item">
+				<img src="Laptop8.jpg" alt="Gambar Produk 8" class="product-img">
+				<h2 class="product-name">Laptop ASUS VivoBook 14 A416FA</h2>
+				<p class="product-specs">
+					<strong>Spesifikasi:</strong>
+					<ul>
+						<li><strong>Sistem Operasi:</strong> Windows 11 Home</li>
+						<li><strong>Prosesor:</strong> Intel Core i3-10110U Dual Core up to 4.1 GHz (Cache 4MB)</li>
+						<li><strong>Grafis:</strong> Intel UHD Graphics Gen-10</li>
+						<li><strong>RAM:</strong> 4GB DDR4</li>
+						<li><strong>Storage:</strong> 256 GB M.2 PCIe NVMe SSD</li>
+						<li><strong>Layar:</strong> IPS LED 14 Inci, Full HD 1920 x 1080 piksel</li>
+						<li><strong>Webcam:</strong> 720p HD Camera</li>
+						<li><strong>Baterai:</strong> 37Wh</li>
+						<li><strong>Konektivitas:</strong> WiFi 802.11ac, Bluetooth 4.1</li>
+						<li><strong>Port:</strong> USB Type C, USB Type A 2.0, HDMI, Headphone Jack</li>
+						<li><strong>Dimensi:</strong> 325.4 x 216 x 19.9 mm, berat: 1.6 kg</li>
+					</ul>
+					<strong>Stok:</strong> 34 unit
+				</p>
+				<p class="product-price">Harga: Rp 6.199.000 IDR</p>
+				<input type="number" class="product-quantity" value="1" min="1" max="20">
+				<button class="add-to-cart" onclick="addToCart('Laptop ASUS VivoBook 14 A416FA', 6199000, document.querySelector('.product-quantity').value)">Tambah ke Keranjang</button>
+			</div>
+			
+			<div class="product-item">
+				<img src="HP.jpg" alt="Gambar Produk 9" class="product-img">
+				<h2 class="product-name">HP realme C65</h2>
+				<p class="product-specs">
+					<strong>Spesifikasi:</strong>
+					<ul>
+						<li><strong>Sistem Operasi:</strong> Android 14</li>
+						<li><strong>Chipset:</strong> MediaTek Helio G85, Octa Core up to 2.0 GHz</li>
+						<li><strong>GPU:</strong> Mali-G52 MC2</li>
+						<li><strong>RAM:</strong> 8GB</li>
+						<li><strong>ROM:</strong> 128 GB</li>
+						<li><strong>Layar:</strong> IPS LCD 6.67 inci, HD+ 1604 x 720 piksel (90Hz)</li>
+						<li><strong>Kamera Depan:</strong> 8MP F2.0</li>
+						<li><strong>Kamera Belakang:</strong> 50MP F1.8 Main + 2MP Macro</li>
+						<li><strong>Konektivitas:</strong> WiFi Dual Band, Bluetooth 5.0, GPS, NFC</li>
+						<li><strong>Baterai:</strong> 5000 mAh</li>
+						<li><strong>Port:</strong> USB Type C with Fast Charging 45W</li>
+						<li><strong>Dimensi:</strong> 164.6 x 76.1 x 7.6 mm, berat: 185 gr</li>
+					</ul>
+					<strong>Stok:</strong> 52 unit
+				</p>
+				<p class="product-price">Harga: Rp 2.399.000 IDR</p>
+				<input type="number" class="product-quantity" value="1" min="1" max="20">
+				<button class="add-to-cart" onclick="addToCart('HP realme C65', 2399000, document.querySelector('.product-quantity').value)">Tambah ke Keranjang</button>
+			</div>
+			
+			
+		</div>
+
+		<div class="checkout-container">
+			<h2>Keranjang Belanja</h2>
+			<table id="cart-items">
+				<thead>
+					<tr>
+						<th>Nama Barang</th>
+						<th>Harga</th>
+						<th>Kuantitas</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody>
+			  
+				</tbody>
+			</table>
+
+			<div class="customer-info">
+				<h3>Informasi Pengiriman</h3>
+				<label for="customer-name">Nama:</label>
+				<input type="text" id="customer-name" placeholder="Masukkan Nama Anda" required><br><br>
+
+				<label for="customer-address">Alamat Penerima:</label>
+				<textarea id="customer-address" placeholder="Masukkan Alamat Pengiriman" required></textarea><br><br>
+
+				<label for="customer-phone">No HP Penerima:</label>
+				<input type="text" id="customer-phone" placeholder="Masukkan Nomor HP Penerima" required><br><br>
+				
+				<label for="customer-message">Pesan (Opsional):</label>
+				<textarea id="customer-message" placeholder="Pesan untuk penerima (opsional)"></textarea><br><br>
+				
+				<label for="customer-payment">Untuk Pembayaran Silahkan Transfer Ke Bank BCA Kami, Nomor : <strong>0143000091</strong></label>
+				
+			</div>
+
+			<p><strong>Total Harga: </strong> Rp <span id="total-price">0</span></p>
+			<button onclick="checkout()">Checkout</button>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+	</html>
